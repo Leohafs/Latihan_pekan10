@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>soal 1 Menghitung luas dan keliling lingkaran</title>
+    <style>
+        body{
+            background-color: rgb(130, 252, 171);
+              
+        }
+        div{
+            background-color: khaki;
+            border-style: solid;
+            width: 300px;
+            padding: 10px;
+            margin-left: 35% ;
+            margin-top: 20%;
+        }
+    </style>
+    <script>
+        function hitung(){
+            const PHI = 3.14;
+            let jari = document.getElementById("bil1").value;
+            console.log("jari-jari : " + jari);
+            let luas = PHI * jari * jari;
+            let kll = 2.0 * PHI * jari;
+            console.log("luas :" + luas);
+            console.log("kll :" + kll);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = "Luas :" + luas + "\nkeliling :" + kll;
+        }
+    </script>
+
+</head>
+<body>
+    <div>
+    <h3>Menghitung luas dan keliling lingkaran</h3><hr>
+    
+    <input type="number" value="" placeholder="masukan jari-jari lingkaran :" size="10" id="bil1"/>
+    
+    <button onclick="hitung()">Hitung</button>
+    <br/>Hasil : <span id="hasil"></span>
+    </div>
+</body>
+</html>

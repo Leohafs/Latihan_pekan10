@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>soal 4 hitung jumlah</title>
+    <style>
+        body{
+            background-color: hotpink;
+        }
+        form{
+            border-style: outset;
+            width: 200px;
+            padding: 20px;
+            margin-left: 40%;
+            margin-top: 20%;
+            background-color: rgba(88, 248, 131, 0.849);
+        }
+    </style>
+    <script>
+        function hitung(){
+            let x = Number(document.getElementById("bil1").value);
+            let y = Number(document.getElementById("bil2").value);
+            let z = x + y;
+            document.getElementById("bil3").value=z;
+        }
+    </script>
+</head>
+<body>
+    <form id="frm1">
+        <input type="number" id="bil1" value="0" onchange="hitung()"/> <br>
+        <b>+</b><br>
+        <input type="number" id="bil2" value="0" onchange="hitung()"/> <br>
+        <b>=</b><br>
+        <input type="text" id="bil3" value="0"/>
+    </form>
+    
+</body>
+</html>
